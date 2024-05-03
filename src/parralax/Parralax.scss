@@ -1,0 +1,80 @@
+.parralax {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 100px;
+        position: relative;
+        z-index: 10; 
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Optional: Adds text shadow for better readability
+    }
+    .vatten {
+        background-image: url('/hav.png');
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .träbåt {
+        background-image: url('/träbåt-removebg-preview.png');
+        background-size: cover;
+        position: absolute;
+        width: 15%;
+        height: 20vh;
+        bottom: 50%; // Distance from bottom
+        left: 10%; // Distance from left
+        z-index: 3;
+    }
+    .plastbåt {
+        background-image: url('/80båt-removebg-preview.png');
+        background-size: cover;
+        position: absolute;
+        width: 15%;
+        height: 15vh;
+        bottom: 48%; // Closer to the bottom
+        right: 10%; // Distance from right
+        z-index: 3;
+    }
+    .windsurf {
+        background-image: url('/windsurf-removebg-preview.png');
+        background-size: cover;
+        position: absolute;
+        width: 2.5%;
+        height: 5vh;
+        top: 38%; // Distance from top
+        left:8%; // Center horizontally
+        transform: translateX(-50%); // Centering adjustment
+        z-index: 3;
+    }
+    .moln1 {
+        background-image: url('/moln1.png');
+        background-size: cover;
+        position: absolute;
+        width: 20%;
+        height: 40vh;
+        top: 4%; // Distance from top
+        left:8%; // Center horizontally
+        transform: translateX(-50%); // Centering adjustment
+        z-index: 4;
+    }
+    .moln2 {
+        background-image: url('/moln1.png');
+        background-size: cover;
+        position: absolute;
+        width: 15%;
+        height: 30vh;
+        top: 2%; // Distance from top
+        left:80%; // Center horizontally
+        transform: translateX(-50%); // Centering adjustment
+        z-index: 4;
+    }
+}
