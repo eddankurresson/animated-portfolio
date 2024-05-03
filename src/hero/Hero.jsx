@@ -1,66 +1,21 @@
 import "./Hero.scss";
-import { motion } from "framer-motion";
-const textVariants ={
-  initial:{
-    x: -500,
-    opacity:0,
-
-  },
-  animate:{
-    x: 0,
-    opacity:1,
-      transistion:{
-        duration:1,
-        staggerChildren:0.1,
-      },
-  },
-  scrollbutton: {
-    opacity: 0,
-    y: 10,
-    transition: {  // Corrected typo here
-      duration: 2,
-      repeat: Infinity,  // Correct usage
-      repeatType: "loop"  // Added repeatType for clarity
-    },
-  },
-};
-
-const sliderVariants ={
-  initial:{
-    x: 0,
-
-  },
-  animate:{
-    x: "-220%",
-    opacity:1,
-      transition:{
-        repeat:Infinity,
-        repeatType:"mirror",
-        duration:20,
-      },
-  },
-  
-};
 
 const Hero = () => {
   return (
     <div className="hero">
       <div className="wrapper">
-      <motion.div className="textContainer" variants ={textVariants} initial="initial" animate="animate">
-          <motion.h2 variants ={textVariants}>Edvin Kurtsson</motion.h2>
-          <motion.h1 variants ={textVariants}>Welcome!</motion.h1>
-          <motion.div className="buttons" variants ={textVariants}>
-            <motion.button variants ={textVariants}>See the Latest Works</motion.button>
-            <motion.button variants ={textVariants}>Contact Me</motion.button>
-          </motion.div>
-          <motion.img src="/scroll.png" animate="scrollbutton" alt="" variants ={textVariants} />
-        </motion.div>
+        <div className="textContainer">
+          <h2>HARVEY TYLER</h2>
+          <h1>Web developer and UI designer</h1>
+          <div className="buttons">
+            <button>See the Latest Works</button>
+            <button>Contact Me</button>
+          </div>
+          <img src="/scroll.png" alt="" />
+        </div>
       </div>
-      <motion.div className= "slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
-      MSc Interaction Design Student
-      </motion.div>
       <div className="imageContainer">
-        <img src="/kungstol.png" alt="" />
+        <img src="/hero.png" alt="" />
       </div>
     </div>
   );

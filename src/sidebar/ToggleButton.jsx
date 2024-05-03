@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
-import Sidebar from "./sidebar";
 
 const ToggleButton = ({ setOpen }) => {
   return (
-    <button className="sidebarbutton" onClick={() => setOpen((prev) => !prev)}>
+    <button onClick={() => setOpen((prev) => !prev)}>
       <svg width="23" height="23" viewBox="0 0 23 23">
         <motion.path
           strokeWidth="3"
@@ -37,7 +36,6 @@ const ToggleButton = ({ setOpen }) => {
 
       
       </svg>
-      
     </button>
   );
 };
