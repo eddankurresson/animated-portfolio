@@ -1,7 +1,7 @@
 {
   "name": "starter",
   "private": true,
-  "homepage": "https://eddankurresson.github.io/",
+  "homepage": "https://eddankurresson.github.io/App",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
