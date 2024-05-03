@@ -9,6 +9,7 @@
 
 .bg {
     position: fixed;
+    z-index: 1000;
     top: 0;
     left: 0;
     bottom: 0;
@@ -29,16 +30,18 @@
        }
    }
 }
-
-button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    position: fixed;
-    top: 25px;
-    left: 25px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    /* button styles might go here */
+.sidebarbutton{
+        position: fixed;
+        z-index: 1000;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: fixed;
+        top: 25px;
+        left: 25px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        /* button styles might go here */
+    
 }
