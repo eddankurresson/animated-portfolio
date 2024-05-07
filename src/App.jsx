@@ -1,10 +1,12 @@
 import "./app.scss";
 import Navbar from "./componentsnavbar/Navbar"
-import Sidebar from "./sidebar/sidebar";
 import Hero from "./hero/Hero";
 import Parralax from "./parralax/Parralax";
+import Portfolio from "./portfolio/Portfolio";
+import Cursor from "./cursor/Cursor"
 const App = () => {
   return <div>
+    <Cursor/>
     <section id="Hem">
     
       <Navbar/>
@@ -13,8 +15,7 @@ const App = () => {
    
     <section id="Om"><Parralax type="Om"/></section>
     <section id="Portfolio"><Parralax type="portfolio"/></section>
-    <section>Portfolio2</section>
-    <section>Portfolio3</section>
+    <Portfolio/>
     <section id="Kontakt">Contact</section>
     
     </div>;

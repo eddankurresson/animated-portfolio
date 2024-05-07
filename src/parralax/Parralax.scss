@@ -59,22 +59,23 @@
         background-image: url('/moln1.png');
         background-size: cover;
         position: absolute;
-        width: 20%;
-        height: 40vh;
-        top: 4%; // Distance from top
-        left:8%; // Center horizontally
-        transform: translateX(-50%); // Centering adjustment
+        width: 20vw; // Use viewport width for better responsiveness
+        height: 40vh; // Keep viewport height to maintain aspect ratio
+        top: 4vh; // Use viewport units for consistent positioning
+        left: 10%; // Start from the center
+        transform: translateX(-50%); // Center the element horizontally
         z-index: 4;
     }
+    
     .moln2 {
         background-image: url('/moln1.png');
         background-size: cover;
         position: absolute;
-        width: 15%;
-        height: 30vh;
-        top: 2%; // Distance from top
-        left:80%; // Center horizontally
-        transform: translateX(-50%); // Centering adjustment
+        width: 15vw; // Use viewport width for better responsiveness
+        height: 30vh; // Keep viewport height to maintain aspect ratio
+        top: 2vh; // Use viewport units for consistent positioning
+        left: 70%; // Adjust according to layout needs
+        transform: translateX(-50%); // Center the element horizontally
         z-index: 4;
     }
 }
