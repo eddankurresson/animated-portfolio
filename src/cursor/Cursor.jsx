@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";  // Ensure motion is imported
+import { delay, motion } from "framer-motion";  // Ensure motion is imported
 import "./Cursor.scss";
 
 const Cursor = () => {
@@ -7,8 +7,9 @@ const Cursor = () => {
 
     useEffect(() => {
         const mouseMove = (e) => {
-            setPosition({x: e.clientX, y: e.clientY});
-        };
+            setTimeout(() => {
+                setPosition({x: e.clientX, y: e.clientY});
+            }, 100);         };
         window.addEventListener("mousemove", mouseMove);
 
         return () => {
@@ -17,7 +18,7 @@ const Cursor = () => {
     }, []);  // Dependency array is empty to ensure this runs only once after initial render
 
     return (
-        <motion.div className="cursor" style={{ x: position.x+10, y: position.y+10 }}></motion.div>  // Use style prop to animate position
+        <motion.div className="cursor" style={{ x: position.x-20, y: position.y -13}}></motion.div>  // Use style prop to animate position
     );
 }
 

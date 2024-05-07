@@ -28,18 +28,18 @@
         background-image: url('/träbåt-removebg-preview.png');
         background-size: cover;
         position: absolute;
-        width: 15%;
-        height: 20vh;
-        bottom: 50%; // Distance from bottom
-        left: 10%; // Distance from left
+        width: 30%;
+        height: 40vh;
+        bottom: 36%; // Distance from bottom
+        left: 5%; // Distance from left
         z-index: 3;
     }
     .plastbåt {
         background-image: url('/80båt-removebg-preview.png');
         background-size: cover;
         position: absolute;
-        width: 15%;
-        height: 15vh;
+        width: 30%;
+        height: 30vh;
         bottom: 48%; // Closer to the bottom
         right: 10%; // Distance from right
         z-index: 3;
@@ -48,9 +48,9 @@
         background-image: url('/windsurf-removebg-preview.png');
         background-size: cover;
         position: absolute;
-        width: 2.5%;
-        height: 5vh;
-        top: 38%; // Distance from top
+        width: 3.5%;
+        height: 7.5vh;
+        top: 30%; // Distance from top
         left:8%; // Center horizontally
         transform: translateX(-50%); // Centering adjustment
         z-index: 3;
@@ -61,8 +61,8 @@
         position: absolute;
         width: 20vw; // Use viewport width for better responsiveness
         height: 40vh; // Keep viewport height to maintain aspect ratio
-        top: 4vh; // Use viewport units for consistent positioning
-        left: 10%; // Start from the center
+        top: 0.5vh; // Use viewport units for consistent positioning
+        left: 20%; // Start from the center
         transform: translateX(-50%); // Center the element horizontally
         z-index: 4;
     }
@@ -73,7 +73,7 @@
         position: absolute;
         width: 15vw; // Use viewport width for better responsiveness
         height: 30vh; // Keep viewport height to maintain aspect ratio
-        top: 2vh; // Use viewport units for consistent positioning
+        top: 1vh; // Use viewport units for consistent positioning
         left: 70%; // Adjust according to layout needs
         transform: translateX(-50%); // Center the element horizontally
         z-index: 4;
