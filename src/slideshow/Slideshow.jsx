@@ -52,9 +52,9 @@ const Slideshow = () => {
 
     return (
         <div style={{ display: 'flex', height: '100vh',padding:'20px', alignItems: 'center', justifyContent: 'space-around' }}>
-            <div style={{ width: '60%', padding: '20px', backgroundColor: '#f0f0f0', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}>
-                <h1>Vem är jag</h1>
-                <p>Hej! Jag heter Edvin, På fritiden älskar jag segling och att utforska teknikens värld. Jag finner stor glädje och harmoni när jag seglar och känner friheten på vattnet. Att lära mig nya tekniska koncept och utforska innovationer är något som jag brinner för. Jag är känd för min positiva inställning och mitt engagemang för att skapa en välkomnande miljö för andra. Att samarbeta och dela kunskap är viktigt för mig, och jag ser fram emot att fortsätta utforska och växa inom både segling och teknik.</p>
+            <div style={{padding: '20px', backgroundColor: '#f0f0f0', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }} className="sistapillen">
+                <h1>Vem är jag?</h1>
+                <p>Hej! Edvin heter jag och är en positiv och glad kille från Nynähsamn. Jag har ett stort intresse för teknik och älskar att jobba med människor. På fritiden gillar jag att få pröva på och hålla på med så många roliga saker som möjligt men jag har också ett väldigt stort båtintresse.</p>
             </div>
             <div style={{ width: '80%',paddingLeft:'20px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
             <Slider ref={sliderRefLeft} {...settings} className="left-slider" style={{ padding: 0,}}>

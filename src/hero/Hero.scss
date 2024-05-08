@@ -1,10 +1,15 @@
+@import "../app.scss";
 .hero{
     height: calc(100vh - 100px);
     overflow: hidden;
     background: linear-gradient(180deg, lightblue, #78C8E5);
     position: relative;
+    @include mobile{
+        width: 100vw;
+    }
     
     .wrapper{
+       
         max-width: 1366px;
         height: 100%;
         margin: auto;
@@ -26,6 +31,10 @@
         h1{
             font-size: 88px;
             z-index: 3;
+            @include mobile{
+                font-size: 66px;
+            }
+            
         }
         .buttons{
             button{
@@ -46,6 +55,9 @@
     }
 
     .imageContainer{
+        @include mobile{
+            display: none;
+        }
         height: 100%;
         position: absolute;
         top: 0;

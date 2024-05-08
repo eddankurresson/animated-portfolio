@@ -1,3 +1,4 @@
+@import "../app.scss";
 .portfolio {
     .progress {
         position: sticky;
@@ -8,6 +9,7 @@
         color: whitesmoke;
         font-size: 36px;
         z-index: 10;
+        
         .progressbar {
             height: 10px;
             background-color: orange;
@@ -22,6 +24,9 @@
         width: 100%;
         padding-top: 150px; // Justerbar beroende på önskad effekt
         overflow: hidden;
+        @include mobile {
+            padding-top: 10px; /* Hide on mobile */
+        }
 
         .wrapper {
             max-width: 100%;
@@ -30,6 +35,7 @@
             display: flex;
             justify-content: center;
             gap: 50px;
+            
 
             .imageContainer {
                 flex: 1;
@@ -39,12 +45,18 @@
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
+                @include mobile {
+                    display: none; /* Hide on mobile */
+                }
             }
             .textContainer {
                 flex: 1;
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
+                @include mobile {
+                    gap: 10px; /* Hide on mobile */
+                }
 
                 h2 {
                     font-size: 72px;
