@@ -16,11 +16,9 @@ const Navbar = () => {
                 Edvin Kurtsson
                 </motion.span>
                 <div className="social">
-                    <a href="#"><img src="/facebook.png" alt="" /></a>
-                    <a href="#"><img src="/instagram.png" alt="" /></a>
-                    <a href="#"><img src="/youtube.png" alt="" /></a>
-                    <a href="#"><img src="/dribbble.png" alt="" /></a>
-                </div>
+                    <a href="https://www.linkedin.com/in/edvin-kurtsson-45509a28b/"><img src="/Linkedin-Logo.png" alt=""/></a>
+                    <a href="/EdvinKurtssonCv.pdf"><img src="/cv.png" alt="" style={{width:'36px'}}/></a>
+                    </div>
             </div>
         </div>
     )

@@ -18,7 +18,7 @@ const Cursor = () => {
     }, []);  // Dependency array is empty to ensure this runs only once after initial render
 
     return (
-        <motion.div className="cursor" style={{ x: position.x-20, y: position.y -13}}></motion.div>  // Use style prop to animate position
+        <motion.div className="cursor" style={{ x: position.x-20, y: position.y -18}}></motion.div>  // Use style prop to animate position
     );
 }
 

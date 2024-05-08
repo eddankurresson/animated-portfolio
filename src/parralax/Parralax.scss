@@ -62,7 +62,7 @@
         width: 20vw; // Use viewport width for better responsiveness
         height: 40vh; // Keep viewport height to maintain aspect ratio
         top: 0.5vh; // Use viewport units for consistent positioning
-        left: 20%; // Start from the center
+        left: 15%; // Start from the center
         transform: translateX(-50%); // Center the element horizontally
         z-index: 4;
     }
@@ -74,7 +74,7 @@
         width: 15vw; // Use viewport width for better responsiveness
         height: 30vh; // Keep viewport height to maintain aspect ratio
         top: 1vh; // Use viewport units for consistent positioning
-        left: 70%; // Adjust according to layout needs
+        left: 60%; // Adjust according to layout needs
         transform: translateX(-50%); // Center the element horizontally
         z-index: 4;
     }

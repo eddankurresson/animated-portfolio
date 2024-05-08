@@ -10,12 +10,12 @@ const Parralax = ({type}) => {
         offset:["start start", "end start"]
     })
     const yTex= useTransform(scrollYProgress, [0,1], ["0%", "200%"])
-    const yBg= useTransform(scrollYProgress, [0,1], ["0%", "250%"])
+    const yBg= useTransform(scrollYProgress, [0,1], ["0%", "150%"])
     
     return(
         <div className = "parralax" style={{background:type==="Om" ? 
         "linear-gradient(180deg, lightblue, #78C8E5)" : "linear-gradient(180deg, lightblue, #2946FA)" }}>
-            <motion.h1 style ={{y: yTex}}>{type === "Om" ? "Här är jag" : "Kolla på mig"} </motion.h1>
+            <motion.h1 style ={{y: yTex}}>{type === "Om" ? "Vem är jag?" : "Vad har jag gjort?"} </motion.h1>
             <motion.div className="vatten"></motion.div>
             <motion.div style ={{y: yBg}} className="träbåt"></motion.div>
             <motion.div style ={{y: yBg}} className="plastbåt"></motion.div>

@@ -19,12 +19,12 @@
         }
         .social{
             @include mobile{
-                padding-left: 200px;
+                padding-left: 300px;
             }
             display: flex;
             gap: 20px;
             img{
-                width:18px;
+                width: 75px;;
                 
             }
         }

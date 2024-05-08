@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useState } from 'react';
 const variants = {
     open: {
-      clipPath: "circle(1200px at 50px 50px)",
+      clipPath: "circle(1300px at 50px 50px)",
       transition: {
         type: "spring",
         stiffness: 20,

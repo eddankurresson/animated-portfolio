@@ -56,11 +56,8 @@ const Hero = () => {
           <motion.img src="/scroll.png" animate="scrollbutton" alt="" variants ={textVariants} />
         </motion.div>
       </div>
-      <motion.div className= "slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
-      Edvin Kurtsson
-      </motion.div>
       <div className="imageContainer">
-        <img src="/kungstol.png" alt="" />
+        <img src="/test4grupp1.png" alt="" />
       </div>
     </div>
   );
