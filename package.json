@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "github-pages": "^3.0.2",
     "jquery": "^3.7.1",
     "react-router-dom": "^6.23.0",
     "react-slick": "^0.30.2",
