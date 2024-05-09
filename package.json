@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
     "github-pages": "^3.0.2",
     "jquery": "^3.7.1",
     "react-router-dom": "^6.23.0",
